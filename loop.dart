@@ -1,3 +1,4 @@
+var i = 0;
 void main() {
   for_loop();
   for_in_loop();
@@ -6,18 +7,19 @@ void main() {
 }
 
 void for_loop() {
-  var i = 1;
-  print("this is for loop " + i.toString());
+  //i = 1;
+  //print("this is for loop " + i.toString());
+  print("this is for loop ${i + 1}");
 }
 
 void for_in_loop() {
-  print("This is for in loop");
+  print("This is for in loop ${i + 2}");
 }
 
 void while_loop() {
-  print("This is for while lopp");
+  print("This is for while lopp ${i + 3}");
 }
 
 void do_while_loop() {
-  print("This is for do while loop");
+  print("This is for do while loop ${i + 4}");
 }
