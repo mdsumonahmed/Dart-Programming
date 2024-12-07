@@ -4,6 +4,7 @@ void main() {
   for_in_loop();
   while_loop();
   do_while_loop();
+  logical_operator();
 }
 
 void for_loop() {
@@ -22,4 +23,18 @@ void while_loop() {
 
 void do_while_loop() {
   print("This is for do while loop ${i + 4}");
+}
+
+void logical_operator() {
+  bool val1 = true;
+  bool val2 = false;
+
+  var and = val1 && val2;
+  print(and);
+
+  var org = val1 || val2;
+  print(org);
+
+  var not = !(val1 || val2);
+  print(not);
 }
